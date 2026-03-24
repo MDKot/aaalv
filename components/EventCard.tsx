@@ -28,7 +28,7 @@ export default function EventCard({ event }: { event: Event }) {
           ) : (
             <div className="w-full h-full bg-gradient-to-br from-charcoal-light to-black flex items-center justify-center">
               <span className="text-white/20 font-heading text-3xl">
-                {event.artist.charAt(0)}
+                {event.artist?.charAt(0) ?? "?"}
               </span>
             </div>
           )}
