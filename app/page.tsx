@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { createClient } from "@supabase/supabase-js";
 import type { Event } from "@/lib/types";
 import EventGrid from "@/components/EventGrid";
