@@ -18,6 +18,7 @@ async function getEvents(): Promise<Event[]> {
     .from("events")
     .select("*")
     .eq("is_published", true)
+    .gte("event_date", new Date().toISOString())
     .order("event_date", { ascending: true });
 
   if (error) {
